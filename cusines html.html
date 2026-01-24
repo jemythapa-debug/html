@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Cuisines Explorer</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --card-bg: #fff;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #f4f4f4; color: #333; }
+        header { background-color: var(--primary); color: white; padding: 2rem; text-align: center; }
+        .container { max-width: 1200px; margin: 20px auto; padding: 0 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: var(--card-bg); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card-img { height: 200px; background-color: #ccc; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+        .card-content { padding: 15px; }
+        .tag { display: inline-block; background: var(--accent); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.8rem; }
+        footer { text-align: center; padding: 2rem; margin-top: 40px; background: var(--primary); color: white; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Global Cuisines</h1>
+        <p>Explore flavors from around the world</p>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <!-- Cuisine 1 -->
+            <div class="card">
+                <div class="card-img" style="background-color: #f39c12;">🇮🇹 Italian</div>
+                <div class="card-content">
+                    <h3>Authentic Pasta</h3>
+                    <p>Experience the rich flavors of handmade pasta, fresh tomatoes, and basil.</p>
+                    <span class="tag">Mediterranean</span>
+                </div>
+            </div>
+            <!-- Cuisine 2 -->
+            <div class="card">
+                <div class="card-img" style="background-color: #27ae60;">🇯🇵 Japanese</div>
+                <div class="card-content">
+                    <h3>Sushi & Ramen</h3>
+                    <p>Delicate, fresh, and precise - a journey through traditional Japanese dining.</p>
+                    <span class="tag">Asian</span>
+                </div>
+            </div>
+            <!-- Cuisine 3 -->
+            <div class="card">
+                <div class="card-img" style="background-color: #c0392b;">🇲🇽 Mexican</div>
+                <div class="card-content">
+                    <h3>Spicy Tacos</h3>
+                    <p>Vibrant, zesty, and filled with heat - authentic street-style tacos.</p>
+                    <span class="tag">Latin American</span>
+                </div>
+            </div>
+            <!-- Additional cards can be added here -->
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 World Cuisines Guide</p>
+    </footer>
+</body>
+</html>
